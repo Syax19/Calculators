@@ -13,7 +13,9 @@ Electricity Bill
 
    330度以上            3.52元              0.5元
 """
+# 設定121~330(含)度的基本費率
 base_fam_elec_120 = 120 * 1.63
+# 設定330度以上的基本費率
 base_fam_elec_330 = base_fam_elec_120 + (210 * 2.38)
 
 elec_class = input("請輸入您的用電類別(工業用電或家庭用電):")
