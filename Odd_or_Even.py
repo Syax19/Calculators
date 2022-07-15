@@ -49,10 +49,10 @@ class NumberIdentifier:
 				num = int(input("Please enter a number(1~1000):"))
 				self.num = num
 				break
-			except (ValueError, AttributeError) as error_name:
+			except (ValueError, AttributeError) as error_name:  # 當使用者輸入非阿拉伯數字的其他字元時會raise ValueError
 				print(error_name)
 				print("Please enter a number within 1~1000")
-				continue
+				continue  # 當輸入錯誤時會重新跳回"Please enter a number(1~1000):"
 
 	def odd_or_even(self):
 		try:
