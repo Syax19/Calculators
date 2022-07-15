@@ -14,8 +14,7 @@ try:
 	else:
 		print("Please enter a number within 1~1000")
 
-# 當使用者輸入非阿拉伯數字1~1000時會raise ValueError
-except ValueError as error_name:
+except ValueError as error_name:  # 當使用者輸入非阿拉伯數字1~1000時會raise ValueError
 	print(error_name)
 	print("Please enter a number within 1~1000")
 
